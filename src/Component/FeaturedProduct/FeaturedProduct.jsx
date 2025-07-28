@@ -122,7 +122,7 @@ const FeaturedProduct = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="object-cover object-center w-full h-72 rounded-t-md"
+              className="object-cover object-center w-full h-84 rounded-t-md"
             />
 
             {/* Info */}

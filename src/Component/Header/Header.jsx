@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div>
@@ -24,22 +26,20 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>HOME</a>
+              <li> 
+                <Link to="/">
+                  <a>HOME</a>
+                </Link>
               </li>
               <li>
-                <a>OVERSIZED T-SHIRT</a>
-                <ul className="p-2">
-                  <li>
-                    <a>CONTRAST STITCH OVERSIZED T-SHIRT</a>
-                  </li>
-                  <li>
-                    <a>OVERSIZED SOLID T-SHIRT</a>
-                  </li>
-                </ul>
+                <Link to="/oversizedTee">
+                  <a>OVERSIZED T-SHIRT</a>
+                </Link>
               </li>
               <li>
-                <a>HALF ZIPPER POLO</a>
+                <Link to="/polo">
+                  <a>HALF ZIPPER POLO</a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -48,30 +48,26 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu text-white menu-horizontal px-1">
-            <li>
-              <a>HOME</a>
-            </li>
-            <li>
-              <details>
-                <summary>OVERSIZED T-SHIRT</summary>
-                <ul className="p-2 bg-black z-10">
-                  <li>
-                    <a>CONTRAST STITCH OVERSIZED T-SHIRT</a>
-                  </li>
-                  <li>
-                    <a>OVERSIZED SOLID T-SHIRT</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>HALF ZIPPER POLO</a>
-            </li>
+              <li> 
+                <Link to="/">
+                  <a>HOME</a>
+                </Link>
+              </li>
+              <li>
+                <Link to="/oversizedTee">
+                  <a>OVERSIZED T-SHIRT</a>
+                </Link>
+              </li>
+              <li>
+                <Link to="/polo">
+                  <a>HALF ZIPPER POLO</a>
+                </Link>
+              </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <Link to="/login" className="navbar-end">
           <a className="btn">Login</a>
-        </div>
+        </Link>
       </div>
     </div>
   );

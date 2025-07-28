@@ -1,14 +1,15 @@
 const Banner = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-20">
       {/* Section Heading - OVERSIZED */}
-      <div className="flex items-center justify-center my-6 sm:my-8">
+     <div className="flex items-center justify-center my-6 sm:my-8">
         <div className="h-px bg-gray-400 w-1/3 sm:w-1/5"></div>
         <h1 className="mx-3 text-lg sm:text-2xl font-bold text-center tracking-widest">
           OVERSIZED T-SHIRT
         </h1>
         <div className="h-px bg-gray-400 w-1/3 sm:w-1/5"></div>
       </div>
+
 
       {/* OVERSIZED Image Scroll */}
       <div className="relative flex items-center justify-center w-full px-2 sm:px-4">
