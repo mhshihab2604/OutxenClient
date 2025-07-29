@@ -8,7 +8,7 @@ const Footer = () => {
           <a
             rel="noopener noreferrer"
             href="#"
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white bg-black px-4 py-2 rounded btn btn-ghost"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white bg-black px-4 py-6 rounded btn btn-ghost border-2 border-white p-2"
           >
             OUT<span className="text-yellow-200">XEN</span>
           </a>

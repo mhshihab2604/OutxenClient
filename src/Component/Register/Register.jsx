@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center px-4">
+    <div className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-md bg-white dark:bg-gray-900 text-gray-800 dark:text-white p-8 rounded-2xl shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 -left-10 w-32 h-32 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
         <h2 className="text-3xl font-bold text-center mb-6">Welcome Back</h2>
@@ -44,7 +44,7 @@ const Register = () => {
 
           <button
             type="submit"
-            className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 rounded-lg transition duration-300"
+            className="w-full bg-white hover:bg-purple-700 text-black hover:text-white font-semibold py-2 rounded-lg transition duration-300"
           >
             Sign In
           </button>

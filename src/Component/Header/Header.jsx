@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { FaCartShopping } from "react-icons/fa6";
 const Header = () => {
   return (
     <div>
@@ -43,7 +43,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-white bg-black">OUT<span className="text-yellow-200">XEN</span></a>
+          <a className="btn btn-ghost text-xl text-white bg-black border-2 border-white">OUT<span className="text-yellow-200">XEN</span></a>
          
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -65,9 +65,17 @@ const Header = () => {
               </li>
           </ul>
         </div>
+        <Link to="/" className="relative">
+          <FaCartShopping className="text-xl text-white" />
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full">
+            3
+          </span>
+        </Link>
+
         <Link to="/login" className="navbar-end">
           <a className="btn">Login</a>
         </Link>
+        
       </div>
     </div>
   );
