@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const Polo = () => {
   const [price, setPrice] = useState([390, 1590]);
@@ -8,7 +9,7 @@ const Polo = () => {
       id: 1,
       name: "Half Zipper Polo t-shirt – Black",
       category: "Half Zipper Polo",
-      image: "https://i.ibb.co/1fVyK2xq/Picsart-25-03-17-19-46-19-548-2.jpg",
+      image: "https://i.ibb.co/bMNJZDyC/De-Watermark-ai-1752682935030.jpg",
       oldPrice: 699,
       newPrice: 449,
       discount: 36,
@@ -18,7 +19,7 @@ const Polo = () => {
       id: 2,
       name: "Half Zipper Polo T-shirt – Coffee",
       category: "Half Zipper Polo",
-      image: "https://i.ibb.co/N2K4pT7w/Picsart-25-03-17-19-46-49-851-2.jpg",
+      image: "https://i.ibb.co/zTw5YGZr/De-Watermark-ai-1752682915280.jpg",
       oldPrice: 699,
       newPrice: 449,
       discount: 36,
@@ -28,7 +29,7 @@ const Polo = () => {
       id: 3,
       name: "Half Zipper Polo t-shirt – Olive",
       category: "Half Zipper Polo",
-      image: "https://i.ibb.co/nMbJXxkP/Picsart-25-03-17-18-51-45-910-2.jpg",
+      image: "https://i.ibb.co/NgBwFt6b/Chat-GPT-Image-Jul-16-2025-10-13-33-PM.png",
       oldPrice: 699,
       newPrice: 449,
       discount: 36,
@@ -36,7 +37,12 @@ const Polo = () => {
     },
   ];
   return (
-    <section className="bg-gray-100 px-4 py-10 mt-20 min-h-[100vh]">
+    <div>
+      <Helmet>
+          <title>Outxen||Polo T-shirt</title>
+      </Helmet>
+
+      <section className="bg-gray-100 px-4 py-10 mt-20 min-h-[100vh]">
       <div className="container mx-auto flex flex-col lg:flex-row gap-8">
         {/* Sidebar Filter */}
         <div className="w-full lg:w-1/4 bg-white border rounded-lg shadow-md p-4 dark:text-black">
@@ -165,6 +171,7 @@ const Polo = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

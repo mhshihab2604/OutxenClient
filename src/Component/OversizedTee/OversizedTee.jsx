@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const OversizedTee = () => {
   const [price, setPrice] = useState([390, 1590]);
@@ -48,7 +49,7 @@ const OversizedTee = () => {
       id: 5,
       name: "Oversized Drop Shoulder T-Shirt – Dark Blue",
       category: "Oversized T-shirt",
-      image: "https://i.ibb.co/rR9tWQfc/freepik-assistant-1753029626950.png",
+      image: "https://i.ibb.co/70FVH6B/photo-6334699560848447679-y.jpg",
       oldPrice: 399,
       newPrice: 299,
       discount: 25,
@@ -66,7 +67,12 @@ const OversizedTee = () => {
     },
   ];
   return (
-    <section className="bg-gray-100 px-4 py-10 mt-20 min-h-[100vh]">
+    <div>
+      <Helmet>
+          <title>Outxen||Oversized Tee</title>
+      </Helmet>
+
+      <section className="bg-gray-100 px-4 py-10 mt-20 min-h-[100vh]">
       <div className="container mx-auto flex flex-col lg:flex-row gap-8">
         {/* Sidebar Filter */}
         <div className="w-full lg:w-1/4 bg-white border rounded-lg shadow-md p-4 dark:text-black">
@@ -195,6 +201,7 @@ const OversizedTee = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

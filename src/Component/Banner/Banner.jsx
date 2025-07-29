@@ -19,7 +19,7 @@ const Banner = () => {
             "https://i.ibb.co/TqcZ7CVH/photo-6334699560848447680-y.jpg",
             "https://i.ibb.co/GvKq44M4/photo-6334699560848447684-y.jpg",
             "https://i.ibb.co/84zTkCqc/photo-6334699560848447681-y.jpg",
-            "https://i.ibb.co/rR9tWQfc/freepik-assistant-1753029626950.png",
+            "https://i.ibb.co/70FVH6B/photo-6334699560848447679-y.jpg",
             "https://i.ibb.co/2wWQ0z3/photo-6334699560848447683-y.jpg",
           ].map((src, i) => (
             <div
